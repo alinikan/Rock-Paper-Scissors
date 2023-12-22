@@ -1,0 +1,43 @@
+<!DOCTYPE html> <!-- This declaration defines this document as HTML5 -->
+<html lang="en"> <!-- Sets the language of the document to English -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Specifies the character encoding for the HTML document (UTF-8 for universal character support) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper rendering and touch zooming on mobile devices -->
+    <title>Rock Paper Scissors Game</title> <!-- Title of the webpage, displayed in the browser's title bar or tab -->
+    <link rel="stylesheet" href="styles.css"> <!-- Links the external CSS file for styling the webpage -->
+</head>
+
+<body>
+    <!-- Main container for the game elements -->
+    <div class="game-container">
+
+        <!-- Section for choosing the game difficulty -->
+        <div class="difficulty-selection">
+            <h3>Select Difficulty:</h3> <!-- Subheading for the difficulty selection -->
+            <!-- Buttons for selecting the game difficulty. 'active' class on 'Easy' button indicates it's the default selected difficulty -->
+            <button id="easy" class="difficulty-button active">Easy</button> 
+            <button id="medium" class="difficulty-button">Medium</button>
+            <button id="hard" class="difficulty-button">Hard</button>
+            <button id="impossible" class="difficulty-button">Impossible</button>
+        </div>
+
+        <!-- Display area for the computer's choice -->
+        <h2>Computer Choice: <span id="computer-choice"></span></h2>
+        <!-- Display area for the user's choice -->
+        <h2>Your Choice: <span id="user-choice"></span></h2>
+        <!-- Display area for the game result -->
+        <h2>Result: <span id="result"></span></h2>
+
+        <!-- Buttons for user to choose Rock, Paper, or Scissors -->
+        <div class="choices">
+            <button id="rock">rock</button> <!-- Button for choosing 'rock' -->
+            <button id="paper">paper</button> <!-- Button for choosing 'paper' -->
+            <button id="scissors">scissors</button> <!-- Button for choosing 'scissors' -->
+        </div>
+    </div>
+
+    <script src="app.js"></script> <!-- Linking the external JavaScript file that contains the game logic -->
+</body>
+
+</html>

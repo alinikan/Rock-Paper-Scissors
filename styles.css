@@ -1,0 +1,97 @@
+/* Basic Resets */
+* {
+  margin: 0; /* Removes default margin from all elements */
+  padding: 0; /* Removes default padding from all elements */
+  box-sizing: border-box; /* Changes the box model to include padding and border in the element's total width and height */
+}
+
+body {
+  font-family: 'Arial', sans-serif; /* Sets the default font for the body */
+  display: flex; /* Enables flexbox layout which is a more efficient way to lay out, align and distribute space among items */
+  justify-content: center; /* Centers items on the horizontal axis (main axis) in flexbox */
+  align-items: center; /* Centers items on the vertical axis (cross axis) in flexbox */
+  height: 100vh; /* Sets the height of the body to 100% of the viewport height */
+  background-color: #e9ecef; /* Sets a light grey background color */
+}
+
+.game-container {
+  width: 80%; /* Sets the width of the game container to 80% of its parent element */
+  max-width: 600px; /* Ensures that the game container doesn't exceed 600px in width */
+  text-align: center; /* Centers the text inside the game container */
+  background-color: white; /* Sets the background color of the game container to white */
+  padding: 20px; /* Adds spacing inside the game container */
+  border-radius: 10px; /* Rounds the corners of the game container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow to the game container */
+}
+
+h2, h3 {
+  margin-bottom: 20px; /* Adds spacing below each h2 and h3 heading */
+  color: #333; /* Sets the text color to a dark grey */
+}
+
+/* Button Styles */
+button {
+  margin: 10px; /* Adds spacing around buttons */
+  padding: 10px 20px; /* Adds internal spacing to buttons */
+  border: 2px solid transparent; /* Sets a transparent border to maintain consistent size when border changes on focus */
+  background-color: #007bff; /* Sets the background color of buttons to a blue shade */
+  color: white; /* Sets the text color of buttons to white */
+  font-size: 16px; /* Sets the font size of button text */
+  border-radius: 5px; /* Rounds the corners of buttons */
+  cursor: pointer; /* Changes the cursor to a pointer when hovering over buttons */
+  transition: all 0.3s ease; /* Adds a smooth transition effect to button properties */
+}
+
+button:hover {
+  background-color: #0056b3; /* Changes the background color when hovering over buttons */
+  border-color: #0056b3; /* Changes the border color when hovering over buttons */
+}
+
+button:focus {
+  outline: none; /* Removes the default outline on focus */
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* Adds a blue shadow to indicate focus */
+}
+
+/* Difficulty Buttons */
+.difficulty-selection {
+  margin-bottom: 20px; /* Adds spacing below the difficulty selection section */
+}
+
+.difficulty-button {
+  margin: 5px; /* Adds spacing around difficulty buttons */
+  padding: 10px 15px; /* Adds internal spacing to difficulty buttons */
+  border: none; /* Removes border from difficulty buttons */
+  background-color: #17a2b8; /* Sets background color of difficulty buttons to a teal shade */
+  color: white; /* Sets the text color of difficulty buttons to white */
+  font-size: 14px; /* Sets the font size of difficulty button text */
+  cursor: pointer; /* Changes the cursor to a pointer when hovering over difficulty buttons */
+  transition: background-color 0.3s; /* Adds a transition effect to the background color of difficulty buttons */
+}
+
+.difficulty-button:hover {
+  background-color: #138496; /* Changes the background color when hovering over difficulty buttons */
+}
+
+.difficulty-button.active {
+  background-color: #007bff; /* Sets the background color of the active difficulty button to a blue shade */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0; /* Starts the animation with the element fully transparent */
+      transform: translateY(-10px); /* Moves the element up by 10px at the start */
+  }
+  to {
+      opacity: 1; /* Ends the animation with the element fully opaque */
+      transform: translateY(0); /* Element returns to its original position */
+  }
+}
+
+.choices button {
+  animation: fadeIn 0.5s ease forwards; /* Applies the fadeIn animation to choice buttons over 0.5 seconds */
+}
+
+.result-animation {
+  animation: fadeIn 1s ease forwards; /* Applies the fadeIn animation to the result over 1 second */
+}

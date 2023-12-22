@@ -1,0 +1,162 @@
+*.class
+.settings/
+.classpath
+.metadata/
+
+# Maven files
+target/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Folder view configuration files and Thumbnail cache files
+.DS_Store
+Desktop.ini
+._*
+Thumbs.db
+**/__pycache__/
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+# Compiled files
+*.py[cod] # Python byte-compiled and optimized files
+*.so     # C extensions
+*.out    # Compiled C++ files
+
+# Distribution / packaging
+../bin/
+build/
+develop-eggs/
+dist/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments and dependencies
+venv/
+node_modules/
+.sass-cache/
+
+# IDE and Editor specific
+.idea/          # PyCharm
+.mr.developer.cfg
+.project
+*.iml
+.pydevproject
+.ropeproject    # Rope
+**/.vscode/        # Visual Studio Code
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# Translations
+*.mo
+*.pot           # Added, usually goes along with *.mo
+
+# Django stuff:
+*.log
+
+# Sphinx documentation
+docs/_build/
+
+# Python cache
+__pycache__/
+
+### Intellij ###
+
+**/.idea/ 
+
+# User-specific stuff:
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
+
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+.idea/**/aws.xml
+.idea/**/contentModel.xml
+
+# Sensitive or high-churn files:
+.idea/dataSources.ids
+.idea/dataSources.xml
+.idea/dataSources.local.xml
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+.idea/uiDesigner.xml
+
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
+
+# Gradle:
+.idea/gradle.xml
+.idea/libraries
+
+.idea/**/gradle.xml
+.idea/**/libraries
+
+# CMake
+cmake-build-*/
+
+# Mongo Explorer plugin:
+.idea/mongoSettings.xml
+.idea/**/mongoSettings.xml
+
+## File-based project format:
+*.iws
+
+## Plugin-specific files:
+
+# IntelliJ
+/out/
+out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# Editor-based Rest Client
+.idea/httpRequests
+
+# Android studio 3.1+ serialized cache file
+.idea/caches/build_file_checksums.ser
